@@ -1,0 +1,104 @@
+{
+  "synthetic_data": true,
+  "n_customers": 5000,
+  "seed": 42,
+  "splits": {
+    "train": 3000,
+    "validation": 1000,
+    "test": 1000
+  },
+  "churn_rate_overall": 0.4064,
+  "validation_roc_auc": {
+    "histgb": 0.6978,
+    "logreg": 0.7447
+  },
+  "selected_model": "logreg",
+  "test_uncalibrated": {
+    "roc_auc": 0.7528,
+    "average_precision": 0.6672,
+    "brier_score": 0.1966,
+    "ece_10bin": 0.0254,
+    "n": 1000,
+    "positive_rate": 0.406
+  },
+  "test_calibrated": {
+    "roc_auc": 0.7534,
+    "average_precision": 0.6629,
+    "brier_score": 0.1966,
+    "ece_10bin": 0.0327,
+    "n": 1000,
+    "positive_rate": 0.406
+  },
+  "calibration_table_test": [
+    {
+      "bin_low": 0.0,
+      "bin_high": 0.1,
+      "mean_predicted": 0.0594,
+      "fraction_positive": 0.0952,
+      "count": 42
+    },
+    {
+      "bin_low": 0.1,
+      "bin_high": 0.2,
+      "mean_predicted": 0.1644,
+      "fraction_positive": 0.1039,
+      "count": 154
+    },
+    {
+      "bin_low": 0.2,
+      "bin_high": 0.3,
+      "mean_predicted": 0.2458,
+      "fraction_positive": 0.2771,
+      "count": 166
+    },
+    {
+      "bin_low": 0.3,
+      "bin_high": 0.4,
+      "mean_predicted": 0.349,
+      "fraction_positive": 0.3557,
+      "count": 149
+    },
+    {
+      "bin_low": 0.4,
+      "bin_high": 0.5,
+      "mean_predicted": 0.4661,
+      "fraction_positive": 0.4624,
+      "count": 186
+    },
+    {
+      "bin_low": 0.5,
+      "bin_high": 0.6,
+      "mean_predicted": 0.5334,
+      "fraction_positive": 0.5736,
+      "count": 129
+    },
+    {
+      "bin_low": 0.6,
+      "bin_high": 0.7,
+      "mean_predicted": 0.651,
+      "fraction_positive": 0.7143,
+      "count": 77
+    },
+    {
+      "bin_low": 0.7,
+      "bin_high": 0.8,
+      "mean_predicted": 0.7401,
+      "fraction_positive": 0.7024,
+      "count": 84
+    },
+    {
+      "bin_low": 0.8,
+      "bin_high": 0.9,
+      "mean_predicted": 0.8485,
+      "fraction_positive": 1.0,
+      "count": 11
+    },
+    {
+      "bin_low": 0.9,
+      "bin_high": 1.0,
+      "mean_predicted": 0.9524,
+      "fraction_positive": 1.0,
+      "count": 2
+    }
+  ]
+}
